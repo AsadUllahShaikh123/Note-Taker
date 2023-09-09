@@ -5,12 +5,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark gray">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"> <i class="fa-duotone fa-pen-to-square fa-beat"></i> Note Taker</a>
+			<a class="navbar-brand" href="#"> <i class="fas fa-edit"></i> Note Taker</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -20,10 +19,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="#">Home</a></li>
-					<li class="nav-item"><a class="nav-link white" href="#">Add Note</a></li>
+						aria-current="page" href="index.jsp">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="add_notes.jsp">Add Notes</a></li>
 					
-					<li class="nav-item"><a class="nav-link white" href="#"
+					<li class="nav-item"><a class="nav-link" href="show_notes.jsp"
 						tabindex="-1" >Show Note</a></li>
 				</ul>
 				<form class="d-flex">

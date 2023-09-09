@@ -1,18 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@include file="components/allCss.jsp" %>
-<link rel="stylesheet" href="components/style.css">
-
+<%@include file="components/allCss.jsp"%>
 </head>
 <body>
-	
-		<%@include file="components/navbar.jsp" %>
-	
-	
+
+	<%@include file="components/navbar.jsp"%>
+	<h1>Hello From Home</h1>
+
 </body>
 </html>
