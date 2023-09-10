@@ -4,25 +4,36 @@
 <%@page import="org.hibernate.Session"%>
 <%@page import="com.helper.FactoryProvider"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@include file="components/allCss.jsp" %>
+<%@include file="components/allCss.jsp"%>
 </head>
 <body>
-<%@include file="components/navbar.jsp" %>
-	<h1>All Notes</h1>
-	<%
+	<%@include file="components/navbar.jsp"%>
+	<div class="container p-3 ">
+		<h1 class="text-center fs-2 ">All Notes</h1>
+		
+		<%
 		Session s = FactoryProvider.getFactory().openSession();
 		Query query = s.createQuery("from Note");
 		List<Note> list = query.list();
-		for(Note note : list){
-	%>
-	<h1><%= note.getTitle() %></h1>
-	<p><%= note.getContent() %></p>
-	<% } %>
+		for (Note note : list) {
+		%>
+		<div class="card mb-4 offset-md-3" style="width:50%">
+  			<div class="card-body">
+				<h5 class="card-title"><%=note.getTitle()%></h5>
+				<p class="card-text"><%=note.getContent()%></p>
+				<a href="delete_notes" class="btn btn-danger">Delete</a>
+				<a href="update_notes" class="btn btn-primary">Update</a>
+			</div>
+		</div>
+		<%
+		}
+		%>
+	</div>
 </body>
 </html>
