@@ -9,7 +9,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark gray">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"> <i class="fas fa-edit"></i> Note Taker</a>
+			<a class="navbar-brand" href="index.jsp"> Note Taker</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
