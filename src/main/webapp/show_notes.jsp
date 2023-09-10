@@ -37,7 +37,7 @@
 				<h5 class="card-title"><%=note.getTitle()%></h5>
 				<p class="card-text"><%=note.getContent()%></p>
 				<a href="delete_notes?id=<%=note.getId()%>" class="btn btn-danger">Delete</a>
-				<a href="update_notes" class="btn btn-primary">Update</a>
+				<a href="update.jsp?id=<%=note.getId()%>" class="btn btn-primary">Update</a>
 			</div>
 		</div>
 		<%
